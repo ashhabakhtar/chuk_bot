@@ -1,0 +1,18 @@
+# Secret files — never upload these!
+.env
+*.pem
+*.ppk
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Error logs
+errors.log
+
+# VS Code settings
+.vscode/
+
+# Database files
+*.sql.bak
