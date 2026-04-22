@@ -19,7 +19,7 @@ def log_error(error, context=""):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     error_msg = f"\n[{timestamp}] {context}\n{traceback.format_exc()}\n"
 
-    print(f"❌ ERROR: {error}")   # Show in terminal
+    print(f"Error: ERROR: {error}")   # Show in terminal
 
     # Save to log file
     try:

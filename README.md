@@ -5,6 +5,13 @@ A fully automated WhatsApp Business chatbot built for CHUK — India's premium e
 
 ---
 
+## 🆕 Recent Updates (April 2024)
+- **Windows Stability Fix**: Removed all emoji print statements from the console output to prevent `UnicodeEncodeError` on Windows machines.
+- **Security Enhancement**: Updated Twilio webhook validation and input sanitization.
+- **Environment Setup**: Added `.env.example` for easier local configuration.
+
+---
+
 ## 📱 Features
 
 | Feature | Description |

@@ -16,3 +16,14 @@ errors.log
 
 # Database files
 *.sql.bak
+
+# Virtual environments
+venv/
+.venv/
+
+# Temp / Scratch files
+scratch/
+
+# OS files
+.DS_Store
+Thumbs.db

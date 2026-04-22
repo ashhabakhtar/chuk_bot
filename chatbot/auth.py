@@ -37,7 +37,7 @@ def send_otp(mobile, otp):
         )
         return True
     except Exception as e:
-        print(f"❌ OTP send failed: {e}")
+        print(f"Error: OTP send failed: {e}")
         return False
 
 

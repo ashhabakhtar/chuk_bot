@@ -24,7 +24,7 @@ def webhook():
     sender       = request.form.get("From", "")
     mobile       = sender.replace("whatsapp:", "")
 
-    print(f"📩 Message from {sender}: {incoming_msg}")
+    print(f"Message from {sender}: {incoming_msg}")
 
     # Rate limiting check
     if is_rate_limited(mobile):
@@ -46,16 +46,16 @@ def webhook():
 
 @app.route("/", methods=["GET"])
 def home():
-    return "✅ CHUK Chatbot Server is Running!", 200
+    return "CHUK Chatbot Server is Running!", 200
 
 
 @app.errorhandler(404)
 def not_found(e):
-    return "❌ Route not found", 404
+    return "Route not found", 404
 
 @app.errorhandler(500)
 def server_error(e):
-    return "❌ Internal server error", 500
+    return "Internal server error", 500
 
 
 if __name__ == "__main__":

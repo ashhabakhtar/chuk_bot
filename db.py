@@ -23,7 +23,7 @@ def get_connection():
         )
         return conn
     except mysql.connector.Error as e:
-        print(f"❌ Database connection failed: {e}")
+        print(f"Error: Database connection failed: {e}")
         return None
 
 
@@ -52,7 +52,7 @@ def execute_query(query, params=None, fetch=False):
             return cursor.lastrowid      # Return ID of last inserted row
 
     except mysql.connector.Error as e:
-        print(f"❌ Query failed: {e}")
+        print(f"Error: Query failed: {e}")
         return None
 
     finally:
