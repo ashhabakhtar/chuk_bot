@@ -89,7 +89,7 @@ def is_valid_twilio_request(request):
         return validator.validate(url, params, signature)
     except Exception as e:
         print(f"Warning: Twilio validation error: {e}")
-        return True   # Allow in development mode
+        return False
 
 
 # -----------------------------------------------
